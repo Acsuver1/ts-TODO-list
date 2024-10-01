@@ -4,7 +4,7 @@ import AddTodo from './components/AddTodo';
 import TodoList from './components/TodoList';
 import { Todo } from './types';
 import './styles/App.css';
-import ParticlesBackground from './components/ParticlesBackground'; 
+
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>(() => {
@@ -39,7 +39,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <ParticlesBackground /> {/* Partikullarni qo'shish */}
+     
       <div className="content">
         <h1>TodoList</h1>
         <AddTodo addTodo={addTodo} />
